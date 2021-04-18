@@ -14,7 +14,7 @@ session_start();
 // $user = "postgres";
 // $password = "postgres";
 // $connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
-$conn = pg_connect(getenv("DATABASE_URL"));
+$db = pg_connect(getenv("DATABASE_URL"));
 
 
 // check database connection
