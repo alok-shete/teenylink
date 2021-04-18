@@ -96,7 +96,7 @@ if (!isset($_SESSION['user_id'])) {
 <script type="text/javascript">
     // get current url
     var url = window.location.href.replace("home.php", "");
-    var url = url + "?v="
+    var url = url + "url.php?v="
 
     // call get links
     get_all_links();
