@@ -97,7 +97,6 @@ function get_all_links()
         <tbody>
             <?php
             $sql = pg_query($db, "SELECT * FROM links WHERE user_id=$user_id ORDER BY link_id DESC;");
-
             $i = 0;
             while ($row = pg_fetch_array($sql)) {
                 $i = $i + 1;
